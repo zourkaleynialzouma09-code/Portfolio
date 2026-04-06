@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique — Portfolio BTS SIO SLAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">Abdoul<span class="accent">.dev</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="Entreprise.html">Entreprise</a>
+                <a href="Réalisations.html">Réalisations</a>
+                <a href="Veille.html" class="active">Veille</a>
+                <a href="Bilan.html">Bilan</a>
+            </nav>
+            <div class="nav-right">
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
+                <button class="btn-icon" title="Basculer thème">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container veille">
+        <section class="veille-intro">
+            <h1>Veille Technologique</h1>
+            <p class="muted">Compétence : <strong>Organiser son développement professionnel</strong> — Mettre en œuvre des outils et stratégies de veille informationnelle</p>
+
+            <div class="veille-description">
+                <h2>Thème et Problématique</h2>
+                <p><strong>Thème :</strong> Technologie numérique et géopolitique</p>
+                <p style="margin-top:0.5rem;"><strong>Problématique :</strong> Comment les États utilisent-ils les technologies numériques comme instruments de puissance dans les relations internationales, et quelles en sont les implications pour la sécurité mondiale ?</p>
+            </div>
+        </section>
+
+        <!-- Filtres par catégorie -->
+        <div class="veille-filters">
+            <h3>Filtrer par catégorie</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="Géopolitique de l'intelligence artificielle">IA & Géopolitique</button>
+                <button class="filter-btn" data-filter="Cyberattaque infrastructure critique">Cyberattaques</button>
+                <button class="filter-btn" data-filter="Guerre des sémis-conducteurs">Semi-conducteurs</button>
+                <button class="filter-btn" data-filter="Cyberguerre">Cyberguerre</button>
+                <button class="filter-btn" data-filter="IA & puissance militaire">IA & puissance militaire</button>
+            </div>
+        </div>
+
+        <!-- Grille des articles -->
+        <section class="articles-grid">
+            <!-- Article 1 -->
+            <article class="article-card" data-category="Géopolitique de l'intelligence artificielle">
+                <div class="article-header">
+                    <span class="article-category">IA & Géopolitique</span>
+                    <span class="article-date">29/12/2025</span>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">Quand les leaders de l'IA convergent pour décrypter la géopolitique à l'ère numérique</h3>
+                    <p class="article-source">Source : L'Économiste Maghrébin</p>
+                    <p class="article-summary">
+                        Analyse des stratégies offensives et défensives en cybersécurité adoptées par les grandes puissances et leur impact sur l'équilibre géopolitique mondial. L'article confronte la pensée d'Ibn Khaldoun aux dynamiques actuelles de puissance numérique.
+                    </p>
+                    <div class="article-rating">
+                        <span class="rating-label">Pertinence :</span>
+                        <div class="rating-stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="rating-value">5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <a href="https://www.leconomistemaghrebin.com/2025/12/29/leaders-ia-geopolitique-ibn-khaldoun/" class="btn btn-outline" target="_blank">Lire l'article</a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-card" data-category="Cyberattaque infrastructure critique">
+                <div class="article-header">
+                    <span class="article-category">Cyberattaques</span>
+                    <span class="article-date">22/12/2025</span>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">Cyberattaque contre La Poste à l'approche de Noël</h3>
+                    <p class="article-source">Source : La Lettre Patriote</p>
+                    <p class="article-summary">
+                        Détails des implications d'une cyberattaque majeure contre les infrastructures postales françaises en pleine période critique. Analyse des mesures de réponse et des leçons pour la protection des systèmes d'information critiques.
+                    </p>
+                    <div class="article-rating">
+                        <span class="rating-label">Pertinence :</span>
+                        <div class="rating-stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="rating-value">3/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <a href="https://lalettrepatriote.com/cyberattaque-la-poste-frappee-en-plein-coeur-a-lapproche-de-noel/" class="btn btn-outline" target="_blank">Lire l'article</a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-card" data-category="Guerre des sémis-conducteurs">
+                <div class="article-header">
+                    <span class="article-category">Semi-conducteurs</span>
+                    <span class="article-date">15/01/2026</span>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">Taxation américaine des semi-conducteurs</h3>
+                    <p class="article-source">Source : Lefigaro</p>
+                    <p class="article-summary">
+                        L’article présente la décision des États-Unis d’imposer une taxe de 25 % sur certains semi-conducteurs transitant par leur territoire, même lorsqu’ils sont destinés à l’exportation. Cette mesure vise à protéger la sécurité nationale et à renforcer l’industrie américaine des puces électroniques dans un contexte de compétition technologique mondiale. Elle pourrait toutefois perturber les chaînes d’approvisionnement et augmenter les coûts pour les entreprises du secteur.
+                    </p>
+                    <div class="article-rating">
+                        <span class="rating-label">Pertinence :</span>
+                        <div class="rating-stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                            <span class="rating-value">4/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <a href="https://www.lefigaro.fr/flash-eco/les-etats-unis-taxeront-a-25-les-semi-conducteurs-transitant-sur-leur-sol-20260115" class="btn btn-outline" target="_blank">Lire l'article</a>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="article-card" data-category="Cyberguerre">
+                <div class="article-header">
+                    <span class="article-category">Cyberguerre</span>
+                    <span class="article-date">28/02/2024</span>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">L'Europe face à la dépendance technologique</h3>
+                    <p class="article-source">Source : Les Échos</p>
+                    <p class="article-summary">
+                        Analyse des initiatives européennes pour réduire la dépendance aux technologies américaines et chinoises. Enjeux de la souveraineté numérique et politiques de l'UE pour développer une autonomie stratégique dans le domaine des technologies critiques.
+                    </p>
+                    <div class="article-rating">
+                        <span class="rating-label">Pertinence :</span>
+                        <div class="rating-stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                            <span class="rating-value">4/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <a href="#" class="btn btn-outline" target="_blank">Lire l'article</a>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="article-card" data-category="Cyberguerre">
+                <div class="article-header">
+                    <span class="article-category">Cyberguerre</span>
+                    <span class="article-date">20/02/2024</span>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">Guerre en Ukraine : le front numérique</h3>
+                    <p class="article-source">Source : The Economist</p>
+                    <p class="article-summary">
+                        Retour sur les opérations cybernétiques menées pendant le conflit ukrainien et leur rôle dans les stratégies militaires conventionnelles. Analyse des attaques contre les infrastructures critiques et de la résilience des systèmes d'information ukrainiens.
+                    </p>
+                    <div class="article-rating">
+                        <span class="rating-label">Pertinence :</span>
+                        <div class="rating-stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="rating-value">5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <a href="#" class="btn btn-outline" target="_blank">Lire l'article</a>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+
+            <article class="article-card" data-category="IA & puissance militaire">
+                <div class="article-header">
+                    <span class="article-category">IA & puissance militaire</span>
+                    <span class="article-date">08/03/2026</span>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">l'IA Claude au cour des opérations militaires en Iran</h3>
+                    <p class="article-source">Source : Courrier international</p>
+                    <p class="article-summary">
+                       Renseignement, planification : l’intelligence artificielle accélère les opérations militaires des États-Unis en Iran, selon la presse d’outre-Atlantique. Le Pentagone y recourt pour la première fois dans un conflit à grande échelle, en pleine brouille avec l’entreprise conceptrice de Claude, Anthropic.
+                    </p>
+                    <div class="article-rating">
+                        <span class="rating-label">Pertinence :</span>
+                        <div class="rating-stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="rating-value">5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <a href="https://www.courrierinternational.com/article/technologie-en-iran-l-ia-claude-au-c-ur-de-la-guerre_241458" class="btn btn-outline" target="_blank">Lire l'article</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Synthèse et analyse -->
+        <section class="veille-synthesis">
+            <h2>Synthèse et Analyse</h2>
+            <div class="synthesis-content">
+                <div class="key-findings">
+                    <h3>Principales conclusions</h3>
+                    <ul>
+                        <li>La technologie est devenue un instrument de puissance équivalent aux capacités militaires conventionnelles</li>
+                        <li>Les sanctions technologiques (puces, logiciels) créent de nouvelles dépendances et accélèrent l'innovation locale</li>
+                        <li>La souveraineté numérique est désormais un enjeu stratégique prioritaire pour les États</li>
+                        <li>Le cyber-espionnage industriel représente une menace croissante pour l'innovation des entreprises</li>
+                        <li>Les infrastructures critiques (énergie, transport, communication) sont des cibles prioritaires dans les conflits</li>
+                    </ul>
+                </div>
+                <div class="implications">
+                    <h3>Implications pour le développement logiciel</h3>
+                    <ul>
+                        <li>Nécessité impérative de renforcer la sécurité des applications critiques dès la conception (<em>Security by Design</em>)</li>
+                        <li>Importance des solutions open-source pour limiter les dépendances à des fournisseurs étrangers</li>
+                        <li>Adaptation aux réglementations (RGPD, NIS2) et conformité aux standards de sécurité</li>
+                        <li>Développement de solutions résilientes face aux pannes et aux attaques (haute disponibilité)</li>
+                        <li>Veille constante sur les nouvelles vulnérabilités (CVE) et correctifs de sécurité</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outils de veille utilisés -->
+        <section style="margin-bottom: 2rem;">
+            <div class="bts-notice">
+                <span class="notice-icon"></span>
+                <div>
+                    <strong>Outils et méthodes de veille utilisés :</strong>
+                    Agrégateurs RSS (Feedly), Google Alerts sur les mots-clés « cyberguerre », « cybersécurité », « géopolitique numérique », consultation régulière de sources spécialisées (ANSSI, CERT-FR, Les Échos Tech, Journal du Net), et veille sur LinkedIn et Twitter/X via des comptes d'experts en cybersécurité.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p>© 2026 Abdoul Wahid Alzouma — Portfolio BTS SIO SLAM — Épreuve E5</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/alzouma-zourkaleyni-9886a1342" target="_blank">LinkedIn</a>
+                <a href="mailto:zourkaleynialzouma09@gmail.com">Email</a>
+                <a href="https://github.com/zourkaleynialzouma09-code" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
