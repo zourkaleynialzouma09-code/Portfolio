@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entreprise — Portfolio BTS SIO SLAM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Abdoul<span class="accent">.dev</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="Entreprise.html" class="active">Entreprise</a>
+        <a href="Réalisations.html">Réalisations</a>
+        <a href="Veille.html">Veille</a>
+        <a href="Bilan.html">Bilan</a>
+      </nav>
+      <div class="nav-right">
+        <button class="mobile-menu-btn" id="menuBtn">☰</button>
+        <button class="btn-icon" id="themeToggle" title="Basculer thème">🌙</button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <span class="logo">Abdoul<span class="accent">.dev</span></span>
+      <button class="mobile-nav-close" id="navClose">✕</button>
+    </div>
+    <a href="index.html">Accueil</a>
+    <a href="Entreprise.html" class="active">Entreprise</a>
+    <a href="Réalisations.html">Réalisations</a>
+    <a href="Veille.html">Veille</a>
+    <a href="Bilan.html">Bilan</a>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <div class="section-label">Expériences professionnelles</div>
+        <h1 class="section-title">Entreprises d'accueil</h1>
+        <p class="section-subtitle">Deux stages réalisés dans des contextes complémentaires — agence web et éditeur logiciel — pour une expérience full-stack complète.</p>
+      </div>
+    </div>
+
+    <section class="entreprise-section">
+      <div class="container">
+        <div class="entreprises-grid">
+
+          <!-- FMATIK -->
+          <div class="entreprise-card reveal">
+            <span class="entreprise-tag tag-stage">Stage 2 · Janv.–Mars 2026</span>
+            <h3>FMATIK</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Issy-les-Moulineaux (92) · 10 semaines</p>
+
+            <p>FMATIK est un éditeur de logiciels spécialisé dans la création de solutions métier sur mesure, notamment via la plateforme FileMaker et le développement mobile. L'entreprise accompagne ses clients dans la digitalisation de leurs processus internes.</p>
+
+            <p><strong>Contexte :</strong> Développement d'une application mobile multiplateforme et automatisation de processus métier via des scripts FileMaker pour le compte de clients de l'entreprise.</p>
+
+            <ul class="missions-list">
+              <li>Développement d'une application mobile avec Flutter/Dart</li>
+              <li>Création et optimisation de scripts JavaScript FileMaker</li>
+              <li>Analyse des besoins clients et rédaction de documentation technique</li>
+              <li>Tests de compatibilité et validation des livrables</li>
+              <li>Participation aux rituels agiles de l'équipe</li>
+            </ul>
+
+            <p><strong>Compétences E5 mobilisées :</strong> Travailler en mode projet · Mettre à disposition un service informatique · Répondre aux incidents · Gérer le patrimoine informatique</p>
+
+            <div class="tech-stack">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Dart</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">FileMaker</span>
+              <span class="tech-badge">Firebase</span>
+              <span class="tech-badge">Android Studio</span>
+              <span class="tech-badge">GitHub</span>
+            </div>
+          </div>
+
+          <!-- ARKIWEB -->
+          <div class="entreprise-card reveal">
+            <span class="entreprise-tag tag-dev">Stage 1 · Mai–Juil. 2025</span>
+            <h3>ARKIWEB</h3>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Bruges (33) · 6 semaines</p>
+
+            <p>ARKIWEB est une agence web spécialisée dans la création de sites internet sur mesure et de solutions e-commerce pour des clients PME et artisans locaux. L'agence propose des prestations complètes allant de la conception à la mise en production.</p>
+
+            <p><strong>Contexte :</strong> Développement full-stack d'un site e-commerce avec intégration PayPal et d'un site vitrine responsive pour des clients directs de l'agence.</p>
+
+            <ul class="missions-list">
+              <li>Développement d'un site e-commerce complet avec back-office</li>
+              <li>Intégration de l'API de paiement PayPal</li>
+              <li>Modélisation et gestion de la base de données MySQL</li>
+              <li>Création d'un site vitrine responsive HTML/CSS/JS</li>
+            </ul>
+
+            <p><strong>Compétences E5 mobilisées :</strong> Développer la présence en ligne · Mettre à disposition un service · Travailler en mode projet · Gérer le patrimoine informatique</p>
+
+            <div class="tech-stack">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">API PayPal</span>
+              <span class="tech-badge">GitHub</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bilan synthèse -->
+        <div class="veille-synthesis reveal" style="margin-top:3rem;">
+          <h2>Bilan des deux stages</h2>
+          <div class="synthesis-content">
+            <div>
+              <h3>Compétences développées</h3>
+              <ul>
+                <li>Cycle complet de développement en conditions réelles (client, délais, prod)</li>
+                <li>Intégration d'API tiers (PayPal)</li>
+                <li>Développement mobile multiplateforme avec Flutter</li>
+                <li>Automatisation de processus métier</li>
+                <li>Documentation technique et communication client</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Apports humains et professionnels</h3>
+              <ul>
+                <li>Adaptabilité à des environnements techniques variés</li>
+                <li>Autonomie et prise d'initiative sur des projets réels</li>
+                <li>Communication au sein d'équipes professionnelles</li>
+                <li>Gestion de plusieurs projets en parallèle</li>
+                <li>Compréhension des enjeux business derrière la technique</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2026 Abdoul Wahid Alzouma — Portfolio BTS SIO SLAM</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/alzouma-zourkaleyni-9886a1342" target="_blank">LinkedIn</a>
+        <a href="mailto:zourkaleynialzouma09@gmail.com">Email</a>
+        <a href="https://github.com/zourkaleynialzouma09-code" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
