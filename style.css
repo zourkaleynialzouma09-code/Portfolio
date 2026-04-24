@@ -1402,3 +1402,93 @@ object {
     padding-bottom: calc(2rem + env(safe-area-inset-bottom));
   }
 }
+
+/* ===== TABLEAU DE SYNTHÈSE RESPONSIVE MOBILE ===== */
+
+@media (max-width: 768px) {
+  .tableau-wrapper {
+    overflow-x: visible;
+    border: none;
+  }
+
+  .tableau-synthese,
+  .tableau-synthese thead,
+  .tableau-synthese tbody,
+  .tableau-synthese th,
+  .tableau-synthese td,
+  .tableau-synthese tr {
+    display: block;
+    width: 100%;
+  }
+
+  .tableau-synthese thead {
+    display: none;
+  }
+
+  .tableau-synthese tr {
+    margin-bottom: 1rem;
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 1rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .tableau-synthese td {
+    border: none;
+    padding: 0.65rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  .tableau-synthese td::before {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--electric);
+    font-weight: 600;
+  }
+
+  .tableau-synthese td:nth-child(1)::before {
+    content: "Réalisation";
+  }
+
+  .tableau-synthese td:nth-child(2)::before {
+    content: "Période";
+  }
+
+  .tableau-synthese td:nth-child(3)::before {
+    content: "Contexte";
+  }
+
+  .tableau-synthese td:nth-child(4)::before {
+    content: "Compétences E5";
+  }
+
+  .tableau-synthese td:nth-child(5)::before {
+    content: "Stack";
+  }
+
+  .tableau-synthese td[colspan="5"] {
+    background: transparent !important;
+    color: var(--electric) !important;
+    padding: 0;
+    margin: 1.5rem 0 0.75rem;
+    border: none;
+    box-shadow: none;
+    font-size: 0.8rem;
+  }
+
+  .tableau-synthese td[colspan="5"]::before {
+    content: "";
+  }
+
+  .comp-badge {
+    display: inline-flex;
+    width: fit-content;
+    margin: 0.15rem 0.15rem 0.15rem 0;
+  }
+}
