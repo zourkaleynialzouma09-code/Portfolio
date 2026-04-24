@@ -1146,3 +1146,259 @@ body::after {
 .project:hover .project-thumb img {
   transform: scale(1.05);
 }
+
+/* ===== CORRECTIF RESPONSIVE GLOBAL 2026 ===== */
+html {
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+main,
+section,
+header,
+footer,
+.container,
+.hero-inner,
+.preview-grid,
+.projects-grid,
+.articles-grid,
+.bilan-grid,
+.entreprises-grid,
+.stats-grid,
+.synthesis-content,
+.project,
+.article-card,
+.bilan-section,
+.entreprise-card,
+.preview-card {
+  min-width: 0;
+}
+
+p,
+li,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+td,
+th {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+img,
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+}
+
+.tableau-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tableau-synthese {
+  min-width: 760px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-inner {
+    height: 60px;
+    gap: 0.75rem;
+  }
+
+  .logo {
+    font-size: 1.08rem;
+  }
+
+  .mobile-nav {
+    width: min(86vw, 320px);
+    max-width: 100%;
+    padding-top: calc(1.25rem + env(safe-area-inset-top));
+    padding-bottom: calc(1.25rem + env(safe-area-inset-bottom));
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 1.25rem 0 2rem;
+    overflow: hidden;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.5rem 0;
+  }
+
+  .hero-title {
+    font-size: clamp(2.15rem, 13vw, 3.4rem);
+    line-height: 1.05;
+  }
+
+  .hero-lead,
+  .section-subtitle {
+    font-size: 0.98rem;
+  }
+
+  .hero-ctas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .hero-ctas .btn,
+  .btn {
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .quick-stats {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .quick-stats li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .quick-stats li strong {
+    min-width: 0;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .profile-placeholder {
+    height: 210px;
+  }
+
+  .card-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .card-links a,
+  .card-link {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .preview,
+  .projects-section,
+  .veille-section,
+  .entreprise-section,
+  .bilan,
+  .page-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-header {
+    padding-top: 3rem;
+  }
+
+  .preview-grid,
+  .projects-grid,
+  .articles-grid,
+  .bilan-grid,
+  .entreprises-grid,
+  .stats-grid,
+  .synthesis-content,
+  .project-detail-grid,
+  .identity-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-header {
+    display: block;
+  }
+
+  .project-thumb {
+    height: 190px;
+  }
+
+  .filter-buttons,
+  .projects-filter,
+  .tech-stack,
+  .project-tags,
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    white-space: normal;
+  }
+
+  .marquee-item {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+
+  .hero-title,
+  .section-title {
+    letter-spacing: -0.02em;
+  }
+
+  .hero-badge {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  .card-links {
+    grid-template-columns: 1fr;
+  }
+
+  .project-thumb {
+    height: 165px;
+  }
+
+  .article-header,
+  .project-meta,
+  .skill-label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .site-footer {
+    padding-bottom: calc(2rem + env(safe-area-inset-bottom));
+  }
+}

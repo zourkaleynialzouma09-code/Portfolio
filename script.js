@@ -113,3 +113,17 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// ===== MOBILE NAV HARDENING =====
+// Ferme le menu après un clic sur un lien et en cas de rotation/redimensionnement.
+document.querySelectorAll('.mobile-nav a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) closeMenu();
+}, { passive: true });
+
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMenu();
+});
